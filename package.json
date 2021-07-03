@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel public/index.html",
+    "build": "parcel build --experimental-scope-hoisting public/* public/.well-known/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LostLuma/website.git"
+  },
+  "author": "Lilly Rose Berner <lilly@lostluma.dev> (https://lostluma.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LostLuma/website/issues"
+  },
+  "homepage": "https://github.com/LostLuma/website#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-head": "^3.4.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
