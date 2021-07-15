@@ -25,7 +25,7 @@ export function Home() {
         <a href="https://github.com/LostLuma" title="GitHub">
           <img src={GitHub} alt="" />
         </a>
-        <a href="https://twitter.com/LostLumaa" title="Twitter">
+        <a href="https://twitter.com/LoneLuma" title="Twitter">
           <img src={Twitter} alt="" />
         </a>
       </div>
