@@ -6,7 +6,7 @@ import "./pages.css";
 import BlobLumaSnow from "./media/abloblumasnow.gif";
 import GitHub from "./media/github.svg";
 import Mail from "./media/mail.svg";
-import Twitter from "./media/twitter.svg";
+import YouTube from "./media/youtube.svg";
 
 export function Home() {
   return (
@@ -19,14 +19,14 @@ export function Home() {
         alt="Luma lost in the snow!"
       />
       <div className="links">
-        <a href="mailto:lilly@lostluma.dev" title="Email">
-          <img src={Mail} alt="" />
+        <a href="https://youtube.com/@LostLuma" title="YouTube">
+          <img src={YouTube} alt="" />
         </a>
         <a href="https://github.com/LostLuma" title="GitHub">
           <img src={GitHub} alt="" />
         </a>
-        <a href="https://twitter.com/LoneLuma" title="Twitter">
-          <img src={Twitter} alt="" />
+        <a href="mailto:lilly@lostluma.dev" title="Email">
+          <img src={Mail} alt="" />
         </a>
       </div>
     </>
