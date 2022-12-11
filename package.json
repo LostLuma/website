@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel public/index.html",
-    "build": "parcel build --experimental-scope-hoisting public/* public/.well-known/*"
+    "build": "parcel build --experimental-scope-hoisting public/* public/.well-known/* && cp _headers dist/"
   },
   "repository": {
     "type": "git",

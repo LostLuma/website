@@ -1,0 +1,6 @@
+https://lostluma.pages.dev/*
+  X-Robots-Tag: noindex
+  Link: <https://lostluma.dev/:splat>; rel="canonical"
+
+https://:commit.lostluma.pages.dev/*
+  Link: <https://lostluma.dev/:splat>; rel="canonical"
