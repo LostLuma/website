@@ -1,10 +1,11 @@
-import React, { StrictMode } from "react";
+import { StrictMode } from "react";
 import { HeadProvider, Link } from "react-head";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./app.css";
-import BlobLuma from "./media/blobluma.png";
 import { Home, NotFound } from "./pages";
+
+const BlobLuma = new URL("./media/blobluma.png", import.meta.url);
 
 export default function App() {
   return (
@@ -13,14 +14,10 @@ export default function App() {
         <BrowserRouter>
           <HeadProvider>
             <Link rel="icon" href={BlobLuma} />
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="*">
-                <NotFound />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
           </HeadProvider>
         </BrowserRouter>
       </StrictMode>

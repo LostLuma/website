@@ -1,12 +1,12 @@
-import React from "react";
 import { Title } from "react-head";
 import { Link } from "react-router-dom";
 
 import "./pages.css";
-import BlobLumaSnow from "./media/abloblumasnow.gif";
-import GitHub from "./media/github.svg";
-import Mail from "./media/mail.svg";
-import YouTube from "./media/youtube.svg";
+
+const BlobLumaSnow = new URL("./media/abloblumasnow.gif", import.meta.url);
+const GitHub = new URL("./media/github.svg", import.meta.url);
+const Mail = new URL("./media/mail.svg", import.meta.url);
+const YouTube = new URL("./media/youtube.svg", import.meta.url);
 
 export function Home() {
   return (
