@@ -1,12 +1,25 @@
+import { css } from "@emotion/react";
 import { Title } from "react-head";
 import { Link } from "react-router-dom";
-
-import "./pages.css";
 
 const BlobLumaSnow = new URL("./media/abloblumasnow.gif", import.meta.url);
 const GitHub = new URL("./media/github.svg", import.meta.url);
 const Mail = new URL("./media/mail.svg", import.meta.url);
 const YouTube = new URL("./media/youtube.svg", import.meta.url);
+
+const holder = css({
+  padding: "2.5em",
+})
+
+const link = css({
+  padding: "0.75em",
+  "&:focus, &:hover": {
+    filter: "invert(0.5) sepia(1) hue-rotate(305deg) saturate(10)",
+  },
+  "@media (prefers-color-scheme: dark)": {
+    filter: "invert(1)",
+  },
+})
 
 export function Home() {
   return (
@@ -18,14 +31,14 @@ export function Home() {
         height="128"
         alt="Luma lost in the snow!"
       />
-      <div className="links">
-        <a href="https://youtube.com/@LostLuma" title="YouTube">
+      <div css={holder}>
+        <a href="https://youtube.com/@LostLuma" title="YouTube" css={link}>
           <img src={YouTube.href} alt="" />
         </a>
-        <a href="https://github.com/LostLuma" title="GitHub">
+        <a href="https://github.com/LostLuma" title="GitHub" css={link}>
           <img src={GitHub.href} alt="" />
         </a>
-        <a href="mailto:lilly@lostluma.net" title="Email">
+        <a href="mailto:lilly@lostluma.net" title="Email" css={link}>
           <img src={Mail.href} alt="" />
         </a>
       </div>

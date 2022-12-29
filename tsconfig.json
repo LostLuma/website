@@ -2,6 +2,7 @@
     "compilerOptions": {
         "strict": true,
         "jsx": "react-jsx",
+        "jsxImportSource": "@emotion/react",
         "target": "ES2022",
         "module": "ES2022",
         "moduleResolution": "node",
