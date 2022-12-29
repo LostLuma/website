@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel public/index.html",
-    "build": "parcel build --experimental-scope-hoisting public/* public/.well-known/* && cp _headers dist/"
+    "build": "parcel build --experimental-scope-hoisting public/* && cp _headers dist/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LostLuma/website.git"
   },
-  "author": "Lilly Rose Berner <lilly@lostluma.dev> (https://lostluma.dev)",
+  "author": "Lilly Rose Berner <lilly@lostluma.net> (https://lostluma.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LostLuma/website/issues"

@@ -25,7 +25,7 @@ export function Home() {
         <a href="https://github.com/LostLuma" title="GitHub">
           <img src={GitHub} alt="" />
         </a>
-        <a href="mailto:lilly@lostluma.dev" title="Email">
+        <a href="mailto:lilly@lostluma.net" title="Email">
           <img src={Mail} alt="" />
         </a>
       </div>
