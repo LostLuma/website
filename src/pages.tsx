@@ -13,20 +13,20 @@ export function Home() {
     <>
       <Title>Home - LostLuma</Title>
       <img
-        src={BlobLumaSnow}
+        src={BlobLumaSnow.href}
         width="128"
         height="128"
         alt="Luma lost in the snow!"
       />
       <div className="links">
         <a href="https://youtube.com/@LostLuma" title="YouTube">
-          <img src={YouTube} alt="" />
+          <img src={YouTube.href} alt="" />
         </a>
         <a href="https://github.com/LostLuma" title="GitHub">
-          <img src={GitHub} alt="" />
+          <img src={GitHub.href} alt="" />
         </a>
         <a href="mailto:lilly@lostluma.net" title="Email">
-          <img src={Mail} alt="" />
+          <img src={Mail.href} alt="" />
         </a>
       </div>
     </>

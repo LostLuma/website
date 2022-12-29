@@ -13,9 +13,9 @@ export default function App() {
       <StrictMode>
         <BrowserRouter>
           <HeadProvider>
-            <Link rel="icon" href={BlobLuma} />
+            <Link rel="icon" href={BlobLuma.href} />
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </HeadProvider>
