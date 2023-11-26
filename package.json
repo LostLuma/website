@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel public/index.html",
+    "start": "parcel serve public/index.html --lazy",
     "build": "parcel build public/* && cp _headers dist/"
   },
   "repository": {
