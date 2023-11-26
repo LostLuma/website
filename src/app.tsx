@@ -15,7 +15,7 @@ const app = css({
 
 export default function App() {
   return (
-    <div className="app" css={app}>
+    <div css={app}>
       <StrictMode>
         <BrowserRouter>
           <HeadProvider>
