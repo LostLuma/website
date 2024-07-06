@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Home, NotFound } from "./pages";
 
-const BlobLuma = new URL("./media/blobluma.png", import.meta.url);
+const BlobLuma = new URL("./media/blobluma.avif", import.meta.url);
 
 const app = css({
   marginTop: "15%",

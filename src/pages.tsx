@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import { Title } from "react-head";
 import { Link } from "react-router-dom";
 
-const BlobLumaSnow = new URL("./media/abloblumasnow.gif", import.meta.url);
+const BlobLumaSnow = new URL("./media/abloblumasnow.avif", import.meta.url);
 const GitHub = new URL("./media/github.svg", import.meta.url);
 const Mail = new URL("./media/mail.svg", import.meta.url);
 const YouTube = new URL("./media/youtube.svg", import.meta.url);
