@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { Title } from "react-head";
+import { Meta, Title } from "react-head";
 import { Link } from "react-router-dom";
 
 const BlobLumaSnow = new URL("./media/abloblumasnow.avif", import.meta.url);
@@ -25,6 +25,7 @@ export function Home() {
   return (
     <>
       <Title>Home - LostLuma</Title>
+      <Meta name="description" content="Lilly's little internet homepage"/>
       <img
         src={BlobLumaSnow.href}
         width="128"
