@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { StrictMode } from "react";
 import { HeadProvider, Link } from "react-head";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Switch } from "wouter";
 
 import { Home, NotFound } from "./pages";
 
@@ -17,15 +17,13 @@ export default function App() {
   return (
     <div css={app}>
       <StrictMode>
-        <BrowserRouter>
           <HeadProvider>
             <Link rel="icon" href={BlobLuma.href} />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="*" component={NotFound} />
+            </Switch>
           </HeadProvider>
-        </BrowserRouter>
       </StrictMode>
     </div>
   );
