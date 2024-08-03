@@ -17,13 +17,13 @@ export default function App() {
   return (
     <div css={app}>
       <StrictMode>
-          <HeadProvider>
-            <Link rel="icon" href={BlobLuma.href} />
-            <Switch>
-              <Route path="/" component={Home} />
-              <Route path="*" component={NotFound} />
-            </Switch>
-          </HeadProvider>
+        <HeadProvider>
+          <Link rel="icon" href={BlobLuma.href} />
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="*" component={NotFound} />
+          </Switch>
+        </HeadProvider>
       </StrictMode>
     </div>
   );

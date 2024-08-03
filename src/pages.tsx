@@ -9,7 +9,7 @@ const YouTube = new URL("./media/youtube.svg", import.meta.url);
 
 const holder = css({
   padding: "2.5em",
-})
+});
 
 const link = css({
   padding: "0.75em",
@@ -19,13 +19,13 @@ const link = css({
   "@media (prefers-color-scheme: dark)": {
     filter: "invert(1)",
   },
-})
+});
 
 export function Home() {
   return (
     <>
       <Title>Home - LostLuma</Title>
-      <Meta name="description" content="Lilly's little internet homepage"/>
+      <Meta name="description" content="Lilly's little internet homepage" />
       <img
         src={BlobLumaSnow.href}
         width="128"
