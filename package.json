@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve public/index.html --lazy",
-    "build": "parcel build public/* && cp _headers dist/"
+    "build": "parcel build public/* && cp _headers dist/",
+    "check": "biome check --write"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "wouter": "^3.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@emotion/babel-plugin": "^11.11.0",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
