@@ -5,7 +5,7 @@ import { Route, Switch } from "wouter";
 
 import { Home, NotFound } from "./pages";
 
-const BlobLuma = new URL("./media/blobluma.avif", import.meta.url);
+const BlobLuma = new URL("./media/blobluma.avif?height=64", import.meta.url);
 
 const app = css({
   marginTop: "15%",
