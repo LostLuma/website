@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel serve public/index.html --lazy",
-    "build": "parcel build public/* && cp _headers dist/",
+    "start": "parcel serve src/public/* --lazy",
+    "build": "parcel build src/public/* && cp _headers dist/",
     "check": "biome check --write"
   },
   "repository": {
