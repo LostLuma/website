@@ -30,7 +30,7 @@ export function Home() {
         src={BlobLumaSnow.href}
         width="128"
         height="128"
-        alt="Luma lost in the snow!"
+        alt="A yellow Luma from Super Mario Galaxy being snowed in."
       />
       <div css={holder}>
         <a href="https://youtube.com/@LostLuma" title="YouTube" css={link}>
