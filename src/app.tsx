@@ -10,7 +10,7 @@ const BlobLuma = new URL("./media/blobluma.avif?height=64", import.meta.url);
 const app = css({
   marginTop: "15%",
   textAlign: "center",
-  fontFamily: "Courier New, Courier, monospace",
+  fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
 });
 
 export default function App() {

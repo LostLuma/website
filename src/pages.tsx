@@ -3,6 +3,7 @@ import { Meta, Title } from "react-head";
 import { Link } from "wouter";
 
 const BlobLumaSnow = new URL("./media/abloblumasnow.avif", import.meta.url);
+const Broken = new URL("./media/broken.svg", import.meta.url);
 const GitHub = new URL("./media/github.svg", import.meta.url);
 const Mail = new URL("./media/mail.svg", import.meta.url);
 const YouTube = new URL("./media/youtube.svg", import.meta.url);
@@ -47,13 +48,23 @@ export function Home() {
   );
 }
 
+const text = css({
+  paddingTop: "2em",
+});
+
 export function NotFound() {
   return (
     <>
       <Title>Not Found - LostLuma</Title>
-      <div>
+      <img
+        src={Broken.href}
+        width="128"
+        height="128"
+        alt="An old-school pixel art icon showing a ripped apart page with a lush green hill, the light blue sky, and a cloud."
+      />
+      <p css={text}>
         Looks like you took a wrong turn! <Link to="/">Go Home.</Link>
-      </div>
+      </p>
     </>
   );
 }
