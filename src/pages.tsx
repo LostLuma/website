@@ -4,9 +4,9 @@ import { Link } from "wouter";
 
 const BlobLumaSnow = new URL("./media/abloblumasnow.avif", import.meta.url);
 const Broken = new URL("./media/broken.svg", import.meta.url);
+const Forgejo = new URL("./media/folder-git-2.svg", import.meta.url);
 const GitHub = new URL("./media/github.svg", import.meta.url);
 const Mail = new URL("./media/mail.svg", import.meta.url);
-const YouTube = new URL("./media/youtube.svg", import.meta.url);
 
 const holder = css({
   padding: "2.5em",
@@ -34,14 +34,14 @@ export function Home() {
         alt="A yellow Luma from Super Mario Galaxy being snowed in."
       />
       <div css={holder}>
-        <a href="https://youtube.com/@LostLuma" title="YouTube" css={link}>
-          <img src={YouTube.href} alt="" />
+        <a href="mailto:lilly@lostluma.net" title="Email" css={link}>
+          <img src={Mail.href} alt="" />
         </a>
         <a href="https://github.com/LostLuma" title="GitHub" css={link}>
           <img src={GitHub.href} alt="" />
         </a>
-        <a href="mailto:lilly@lostluma.net" title="Email" css={link}>
-          <img src={Mail.href} alt="" />
+        <a href="https://code.lostluma.net/LostLuma" title="Forgejo" css={link}>
+          <img src={Forgejo.href} alt="" />
         </a>
       </div>
     </>
