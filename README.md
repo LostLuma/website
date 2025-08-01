@@ -1,5 +1,3 @@
-Website
-=======
+# Website
 
-My little personal homepage.  
-Mostly used to play around with React and Parcel, which I then use elsewhere.
+This project has moved to [code.lostluma.net](https://code.lostluma.net/LostLuma/website).
